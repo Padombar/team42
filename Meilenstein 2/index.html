@@ -1,56 +1,62 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="de">
-	<head>
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Meilenstein-2</title>
-	</head>
-	<body>
-		<form action="http://martinakraus.net/hsmannheim.php" method="GET">
-	
-			<table> 
-				<tr> 
-					<td>Vorname:</td> 
-					<td><input type="text"></td>
-				</tr> 
-				
-				<tr> 
-					<td>Nachname:</td> 
-					<td><input type="text"></td>
-				</tr> 
-				
-				<tr> 
-					<td>E-Mail:</td> 
-					<td><input type="text"></td> 
-				</tr>
-				<br>
-				<tr> 
-					<td>Matrikelnummer:</td> 
-					<td><input type="text"></td> 
-				</tr>
-				
-				<tr> 
-					<td>Studiengang:</td> 
-					<td><select name=Studiengang>
-						<option value="UIB">BäähhIB</option>
-						<option value="IB" selected="selected">IB</option>
-						<option value="IMB">MäähhIB</option>
-					</select></td> 
-				</tr>
-				
-				<tr>
-					<td>Messe:</td>
-					<td>
-						<input type="radio" name="messe" checked="checked"
-						value="cebit"/>CeBit<br/>
-						<input type="radio" name="messe" 
-						value="conhit"/>ConhIT<br/>
-						<input type="radio" name="messe"
-						value="webtech con"/>WebTech Con<br/>
-					</td>
-				</tr>
-				
-			</table>
-			<button type="button" name="anmelden">Anmelden</button>
-		</form>
-	</body>
+</head>
+<body bgcolor="#99D9EA">
+	<h1>Anmeldung</h1>
+	<form action="http://martinakraus.net/hsmannheim.php" method="GET">
+
+		<table> 
+			<tr> 
+				<td>Vorname:</td> 
+				<td><input type="text" placeholder="Max"></td> 
+			</tr> 
+
+			<tr> 
+				<td>Nachname:</td> 
+				<td><input type="text" placeholder="Mustermann"></td> 
+			</tr> 
+
+			<tr> 
+				<td>E-Mail:</td> 
+				<td><input type="text" placeholder="max@mustermann.de"></td> 
+			</tr>
+
+			<tr> 
+				<td>Matrikelnummer:</td> 
+				<td><input type="text" placeholder="1234567"></td> 
+			</tr>
+
+			<tr> 
+				<td>Handynummer:</td> 
+				<td><input type="text" placeholder="0123/123456"></td> 
+			</tr>
+
+			<tr> 
+				<td style="margin-top:30px">Studiengang:</td> 
+				<td><select name=Studiengang>
+					<option value="UIB">BäähhIB</option>
+					<option value="IB" selected="selected">IB</option>
+					<option value="IMB">MäähhIB</option>
+				</select></td> 
+			</tr> 
+
+			<tr>
+				<td>Messe:</td>
+				<td>
+					<input type="radio" name="messe" checked="checked"
+					value="cebit"/>CeBit<br/>
+					<input type="radio" name="messe" 
+					value="conhit"/>ConhIT<br/>
+					<input type="radio" name="messe"
+					value="webtech con"/>WebTech Con<br/>
+				</td>
+			</tr>
+			
+		</table>
+		<button type="button" name="anmelden">Anmelden</button>
+	</form>
+</body>
 </html>
