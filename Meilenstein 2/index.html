@@ -3,60 +3,103 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Meilenstein-2</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="#99D9EA">
+<body>
+	<div id="s1">
 	<h1>Anmeldung</h1>
+	<h2>Hier könnt ihr euch für eine Messe eurer Wahl anmelden</h2>
+	<br><br><br>
+	
+	<!-- Hier wäre es wohl besser, wenn man das Formular als einen eigenen Block macht und man ihn dann neu positioniert.
+	Dann bräuchte man die Zeilenumbrüche nicht. !-->
+	
 	<form action="http://martinakraus.net/hsmannheim.php" method="GET">
 
-		<table> 
+		<table border ="0">
+			<colgroup>
+				<col width="130">
+
+			</colgroup>
 			<tr> 
-				<td>Vorname:</td> 
+				<td><h2>Vorname:</h2></td> 
 				<td><input type="text" placeholder="Max"></td> 
 			</tr> 
 
 			<tr> 
-				<td>Nachname:</td> 
+				<td><h2>Nachname:</h2></td> 
 				<td><input type="text" placeholder="Mustermann"></td> 
 			</tr> 
 
-			<tr> 
-				<td>E-Mail:</td> 
+			<tr>  
+				<td><h2>E-Mail:</h2></td> 
 				<td><input type="text" placeholder="max@mustermann.de"></td> 
 			</tr>
 
 			<tr> 
-				<td>Matrikelnummer:</td> 
+				<td><h2>Matrikelnummer:</h2></td> 
 				<td><input type="text" placeholder="1234567"></td> 
 			</tr>
 
 			<tr> 
-				<td>Handynummer:</td> 
+				<td><h2>Handynummer:</h2></td> 
 				<td><input type="text" placeholder="0123/123456"></td> 
 			</tr>
 
 			<tr> 
-				<td style="margin-top:30px">Studiengang:</td> 
+				<td style="margin-top:30px"><h2>Studiengang:</h2></td> 
 				<td><select name=Studiengang>
-					<option value="UIB">BäähhIB</option>
+					<option value="UIB">UIB</option>
 					<option value="IB" selected="selected">IB</option>
-					<option value="IMB">MäähhIB</option>
+					<option value="IMB">IMB</option>
 				</select></td> 
 			</tr> 
 
 			<tr>
-				<td>Messe:</td>
+				<td><h2>Messe:</h2></td> 
 				<td>
 					<input type="radio" name="messe" checked="checked"
-					value="cebit"/>CeBit<br/>
+					value="cebit"/>CeBit
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
 					<input type="radio" name="messe" 
-					value="conhit"/>ConhIT<br/>
+					value="conhit"/>ConhIT
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
 					<input type="radio" name="messe"
-					value="webtech con"/>WebTech Con<br/>
+					value="webtech con"/>WebTech Con
 				</td>
 			</tr>
 			
 		</table>
+		<br>
 		<button type="button" name="anmelden">Anmelden</button>
 	</form>
+	</div>
+	
+	<!-- Anfang rechter Block mit den Messe Infos !-->	
+	<div id="s2">
+		<font
+		<h3>Messe Infos</h3>
+		<h2>Bitte auf die Messe eurer Wahl klicken um weitere Info's zu bekommen</h2>
+		<br><br>
+		<h4>
+		<a href="Cebit.html">CeBIT</a>
+		<br><br>
+		<a href="Conhit.html">ConhIT</a>
+		<br><br>
+		<a href="Webtechcon.html">WebTech Con</a>
+		</h4>
+	</div>
+	
+	
+	
+	
 </body>
 </html>
