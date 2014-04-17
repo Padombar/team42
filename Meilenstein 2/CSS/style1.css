@@ -1,5 +1,4 @@
 body {
-    resize: both;
     margin: 0 auto;
     padding: 0;
     color: #5F5F5F;
@@ -9,7 +8,6 @@ body {
     /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
 }
 #wrapper {
-    background-color: #FFFFFF;
     margin: 0 auto;
 }
 
