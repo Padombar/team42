@@ -1,0 +1,43 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: #5F5F5F;
+    background-color: #99d9ea;
+    font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
+    min-width:1040px; /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
+}
+
+#titel_box{
+   margin: 0 auto;
+}
+
+#titel_Logo{
+    margin-right: 20%;
+}
+
+h1{
+    margin-left: 22%;
+    text-align: center;
+    font-size: 22pt;
+}
+
+#content{
+    margin: 0 auto;
+}
+
+#content_text{
+    width: 40%;
+    margin: 20px 5px 20px 320px ;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+#content_image1{
+    margin: 20px 430px 20px 5px
+}
+
+#content_image2{
+    margin-left: 320px ;
+}
+
+
