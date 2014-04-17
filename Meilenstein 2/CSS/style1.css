@@ -1,10 +1,16 @@
 body {
+    resize: both;
     margin: 0 auto;
     padding: 0;
     color: #5F5F5F;
     background-color: #99d9ea;
     font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
-    min-width:1040px; /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
+    min-width: 1950px;
+    /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
+}
+#wrapper {
+    background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 #titel_box{
