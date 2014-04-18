@@ -1,12 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="de">
 <head>
+	<link rel="Stylesheet" href="index.css" type="text/css"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Meilenstein-2</title>
 </head>
-<body bgcolor="#99D9EA">
-	<h1>Anmeldung</h1>
-	<form action="http://martinakraus.net/hsmannheim.php" method="GET">
+<body>
+	<div id="Teamname">Team42</div>
+	
+	<div id="Anmelden">
+		<form action="http://martinakraus.net/hsmannheim.php" method="GET">
+		
+		<h1 id="Überschrift">Anmeldung</h1>
+			<h2 id="Unterüberschrift">Hier könnt ihr euch für eine Messe eurer Wahl anmelden</h2>
 
 		<table> 
 			<tr> 
@@ -35,18 +41,17 @@
 			</tr>
 
 			<tr> 
-				<td style="margin-top:30px">Studiengang:</td> 
+				<td>Studiengang:</td> 
 				<td><select name=Studiengang>
-					<option value="UIB">BäähhIB</option>
+					<option value="UIB">UIB</option>
 					<option value="IB" selected="selected">IB</option>
-					<option value="IMB">MäähhIB</option>
+					<option value="IMB">IMB</option>
 				</select></td> 
 			</tr> 
 
 			<tr>
 				<td>Messe:</td>
-				<td>
-					<input type="radio" name="messe" checked="checked"
+				<td><input type="radio" name="messe" checked="checked"
 					value="cebit"/>CeBit<br/>
 					<input type="radio" name="messe" 
 					value="conhit"/>ConhIT<br/>
@@ -56,7 +61,17 @@
 			</tr>
 			
 		</table>
+		
 		<button type="button" name="anmelden">Anmelden</button>
-	</form>
+		
+		</form>
+	</div>
+	
+	<div id="MesseInfos">
+	<h1 style="font-size: 14px">Messe Infos</h1>
+	<p style="font-size: 12px">Bitte auf eine Messe ihrer Wahl klicken um weitere Infos zu bekommen</p>
+	<a href=  <!-- html von Messe--> </a>
+	</div>
+	
 </body>
 </html>
