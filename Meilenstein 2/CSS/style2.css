@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    color: #5F5F5F;
+    background-color: #99d9ea;
+    font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
+    min-width: 1040;
+}
+
+#titel_box{
+}
+
+#titel_Logo{
+    position: absolute;
+    top: 1%;
+    left: 68%;
+}
+
+h1{
+    text-align: center;
+    font-size: 22pt;
+}
+
+#content{
+}
+
+#content_text{
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    bottom: 80%;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+#content_image1{
+    position: absolute;
+    top: 20%;
+    right: 22%;
+
+}
+
+#content_image2{
+    position: absolute;
+    left: 18%;
+    top: 59%;
+}
+
