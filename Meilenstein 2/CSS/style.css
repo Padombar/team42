@@ -7,12 +7,18 @@ body {
 }
 
 #titel_box{
+    margin-left: 40%;
 }
 
+#Top-Text{
+    margin-left: 30%;
+}
+
+
 #titel_Logo{
-    position: absolute;
-    top: 1%;
-    left: 68%;
+    float: right;
+    margin-top: 0%;
+    margin-right: 18%;
 }
 
 h1{
@@ -20,29 +26,25 @@ h1{
     font-size: 22pt;
 }
 
-#content{
-}
-
 #content_text{
     width: 600px;
-    position: absolute;
-    top: 15%;
-    left: 18%;
-    bottom: 80%;
+    margin-right: 3%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 18%;
+    margin-bottom: 2%;
     font-size: 16pt;
     text-align: justify;
 }
 
 #content_image1{
-    position: absolute;
-    top: 20%;
-    right: 22%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 20%;
 
 }
 
 #content_image2{
-    position: absolute;
-    left: 18%;
-    top: 59%;
+    margin-left: 18%;
 }
 
