@@ -1,0 +1,33 @@
+body{
+    background-color: #99D9EA;
+    font-family: Arial Black;
+    font-weight: bold;
+}
+
+#Teamname{
+    font-size: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+    border: solid;
+    width: 80px;
+    height: 30px;
+}
+
+#Anmelden{
+    font-size: 12px;
+}
+
+#Überschrift{
+    font-size: 20px;
+}
+
+#Unterüberschrift{
+    font-height: 12px;
+}
+
+#MesseInfos{
+    float: right;
+    margin-top: 50px;
+}
