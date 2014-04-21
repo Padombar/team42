@@ -4,30 +4,51 @@ body{
     font-weight: bold;
 }
 
-#Teamname{
-    font-size: 20px;
-    float: right;
-    margin-top: 20px;
-    margin-right: 50px;
-    text-align: center;
-    border: solid;
-    width: 80px;
-    height: 30px;
+#titel_box{
+    margin-left: 10%;
 }
 
-#Anmelden{
+#ueberschrift{
+    margin-left: 10%;
+}
+
+#titel_Logo{
+    float: right;
+    width: 17%;
+    margin-top: 0%;
+    margin-right: 3%;
+}
+
+#anmeldung{
+    font-size: 20px;
+}
+
+#unterueberschrift{
     font-size: 12px;
 }
 
-#Überschrift{
-    font-size: 20px;
+#formular{
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 12px;
+    margin-right: 2%;
 }
 
-#Unterüberschrift{
-    font-height: 12px;
-}
-
-#MesseInfos{
+#messeInfos{
     float: right;
-    margin-top: 50px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#messeInfosUeberschrift{
+    font-size: 14px;
+}
+
+#messeInfoUnterueberschrift{
+    font-size: 12px;
+}
+
+#messeLinks{
+    font-size: 16px;
 }
