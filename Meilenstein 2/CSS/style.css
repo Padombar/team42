@@ -19,7 +19,7 @@ body {
     float: right;
     width: 17%;
     margin-top: 0%;
-    margin-right: 7%;
+    margin-right: 8%;
 }
 
 h1{
@@ -29,7 +29,7 @@ h1{
 
 #content_text{
 
-    width: 35%;
+    width: 32%;
     margin-right: 2%;
     float: left;
     margin-top: 1%;
@@ -42,8 +42,8 @@ h1{
 #content_image1{
     float: right;
     width: 35%;
-    margin-top: 4%;
-    margin-right: 9%;
+    margin-top: 3%;
+    margin-right: 12%;
 
 }
 
