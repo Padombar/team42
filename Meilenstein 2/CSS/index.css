@@ -1,22 +1,24 @@
 body{
+    padding: 0;
     background-color: #99D9EA;
-    font-family: Arial Black;
-    font-weight: bold;
+    font-family: Arial Black, sans-serif;
+    font-weight: 900;
+    min-width: 1040px;
 }
 
-#titel_box{
+#titel_Box{
     margin-left: 10%;
 }
 
 #ueberschrift{
-    margin-left: 10%;
+    margin-left: 4%;
 }
 
 #titel_Logo{
     float: right;
     width: 17%;
     margin-top: 0%;
-    margin-right: 3%;
+    margin-right: 7%;
 }
 
 #anmeldung{
@@ -27,16 +29,23 @@ body{
     font-size: 12px;
 }
 
+#content{
+    margin-left: 10%;
+}
+
 #formular{
     float: left;
-    margin-left: 10%;
+    width: 35%;
+    margin-left: 4%;
     margin-top: 4%;
     font-size: 12px;
     margin-right: 2%;
 }
 
 #messeInfos{
-    float: right;
+    float: left;
+    width: 35%;
+    margin-left: 4%;
     margin-top: 4%;
     text-align: center;
 }

@@ -7,24 +7,19 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	
-	<div id="wrapper">
-		
+	<div id="wrapper">		
 		<div id="titel_Box">
 			<div id="titel_Logo">
 				<img src="Bilder/Team_Logo_42.jpg"  width=250 height=110 alt="logo42">
 			</div>
-
 			<div id="ueberschrift">
 				<h1 id="anmeldung">Anmeldung</h1>
 				<h2 id="unterueberschrift">Hier k&ouml;nnt ihr euch für eine Messe eurer Wahl anmelden</h2>
 			</div>
-		</div>
-		
-		<div id="content">
+		</div>		
+		<div id="content">						
 			<div id="formular">		
-				<form action="http://martinakraus.net/hsmannheim.php" method="GET">
-
+				<form action="http://martinakraus.net/hsmannheim.php" method="get">
 					<table border ="0">
 						<colgroup>
 						<col width="130">
@@ -33,27 +28,22 @@
 						<td>Vorname:</td> 
 						<td><input type="text" name="vorname"></td> 
 					</tr> 
-
 					<tr> 
 						<td>Nachname:</td> 
 						<td><input type="text" name="nachname"></td> 
 					</tr> 
-
 					<tr>  
 						<td>E-Mail:</td> 
 						<td><input type="text" name="mail"></td> 
 					</tr>
-
 					<tr> 
 						<td>Matrikelnummer:</td> 
 						<td><input type="text" name="matrikelnummer"></td> 
 					</tr>
-
 					<tr> 
 						<td>Handynummer:</td> 
 						<td><input type="text" name="handynummer"></td> 
 					</tr>
-
 					<tr> 
 						<td>Studiengang:</td> 
 						<td><select name="Studiengang">
@@ -62,7 +52,6 @@
 							<option value="IMB">IMB</option>
 						</select></td> 
 					</tr> 
-
 					<tr>
 						<td>Messe:</td> 
 						<td>
@@ -84,23 +73,21 @@
 							value="webtech con">WebTech Con
 						</td>
 					</tr>
-					
 				</table>	
 				<button type="button" name="anmelden">Anmelden</button>		
 			</form>
+			</div>
+			<div id="messeInfos">
+				<h1 id="messeInfosUeberschrift">Messe Infos</h1>
+				<h2 id="messeInfoUnterueberschrift">Bitte auf die Messe eurer Wahl klicken um weitere Info's zu bekommen</h2>
+				<br><br>
+				<div id="messeLinks">
+					<a href="Cebit.html">CeBIT</a><br><br>
+					<a href="Conhit.html">ConhIT</a><br><br>
+					<a href="Webtechcon.html">WebTech Con</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<div id="messeInfos">
-		<h1 id="messeInfosUeberschrift">Messe Infos</h1>
-		<h2 id="messeInfoUnterueberschrift">Bitte auf die Messe eurer Wahl klicken um weitere Info's zu bekommen</h2>
-		<br><br>
-		<div id="messeLinks">
-			<a href="Cebit.html">CeBIT</a><br><br>
-			<a href="Conhit.html">ConhIT</a><br><br>
-			<a href="Webtechcon.html">WebTech Con</a>
-		</div>
-	</div>
-</div>
 </body>
 </html>
