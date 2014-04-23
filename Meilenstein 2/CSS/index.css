@@ -42,6 +42,21 @@ body{
     margin-right: 2%;
 }
 
+#anmeldeButton{
+    width: 100%;
+}
+
+#table{
+    border-collapse: seperate;
+    border-spacing: 0px;
+    border: 0px;
+}
+
+#table tr, td{
+    border: 0px;
+    padding: 8px;
+}
+
 #messeInfos{
     float: left;
     width: 35%;
