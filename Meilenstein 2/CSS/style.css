@@ -20,15 +20,11 @@ h1{
 }
 
 #content_text{
-
     width: 32%;
     margin-right: 2%;
     float: left;
-    margin-top: 1%;
     margin-left: 18%;
-    margin-bottom: 1%;
     font-size: 16pt;
-    text-align: justify;
 }
 
 #content_image1{
@@ -36,7 +32,6 @@ h1{
     width: 35%;
     margin-top: 3%;
     margin-right: 12%;
-
 }
 
 #content_image2{
