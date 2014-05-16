@@ -1,11 +1,8 @@
 @import url(logo.css);
 
 body{
-    padding: 0;
-    background-color: #99D9EA;
     font-family: Arial Black, sans-serif;
     font-weight: 900;
-    min-width: 1040px;
 }
 
 #titel_Box{
