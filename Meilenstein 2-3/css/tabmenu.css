@@ -1,0 +1,60 @@
+@import url(main.css);
+
+
+
+body {
+    background-color: #99D9EA;
+}
+
+#wrapper{
+
+}
+
+.mainTab{
+    margin: 0;
+    background-color: #3f47cc;
+}
+
+#topTextDetail{
+    margin-left: 26%;
+
+}
+
+#tabMenu{
+
+    margin: 2% 20% 0% 20%;
+
+}
+
+#messeTabelle{
+
+}
+
+#teilnehmerTabBox{
+    margin: 0;
+    visibility: hidden;
+}
+
+#teilnehmerTabCebit{
+    background-color: #00a4eb;
+}
+
+#teilnehmerTabConhit{
+
+}
+
+#teilnehmerTabWebConTech{
+
+}
+
+#teilnehmerTabellen{
+    visibility: hidden;
+
+}
+
+#zurueck{
+    float: right;
+    margin-right: 10%;
+
+}
+
