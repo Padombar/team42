@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
-    <title> </title>
+    <title>Details zur Anmeldung</title>
 </head>
 
 <body>
@@ -16,14 +16,109 @@
             </div>
         </div>
         
-        <!-- Rest in JavaScript? Logo auch?-->
+        <h1>Details zur Anmeldung</h1>
+        
+        <!-- HEADER-MENUE-->
         
         
+        <!-- FIRST TABLE-->
+        <div id="ersteTabelle" onclick="Verbergen(this);">
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                <th>Messe</th>
+                <th>Selbstkosten</th>
+            </tr>
+          
+            <script type="text/javascript">
+                
+            var messe = new Array();
+            messe["CeBIT"] = "15 €";
+            messe["ConhIT"] = "30 €";
+            messe["WebTech Con"] = "300 €";
+            
+            for (var eigenschaft in messe) {
+                document.write(
+                "<tr><td>" + eigenschaft + "</td>" +
+                "<td><code>" + messe[eigenschaft] + "</code></td></tr>"
+                );
+            }
+            </script>
+            
+            </table>
+        </div>
         
+        <!-- SECOND TABLE -->
+        <div id="zweiteTabelle" onclick="Verbergen(this);">
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                <th>Name</th>
+                <th>Vorname</th>
+                <th>Studiengang</th>
+                <th>eMail</th>
+            </tr>
+          
+            <!-- CONTRIBUTORS FACTORY-->
+            <script type="text/javascript">
+            function makeContributors(name, vorname, studiengang, email) {
+                var that = new Object();
+                that.name = name;
+                that.vorname = vorname;
+                that.studiengang = studiengang;
+                that.email = email;
+                
+                <!-- ???? -->
+                that.details = function() {
+                    return "Name: " + this.name 
+                        + ", geboren: " + this.geboren;
+                };
+                
+                return that;
+            }
+            </script>
+            
+            <!-- CONTRIBUTORS CEBIT-->
+            <div id="cebit" onclick="Verbergen(this);">
+                <script type="text/javascript">
+                    var ent = makeContributors("Ent", "Thilo", "IB", "tDOTentATgmailDOTde");
+                    var kraus = makeContributors("Kraus", "Martina", "IB", "mDOTkrausAThs-mannheimDOTde");
+                    var smits = makeContributors("Smits", "Thomas", "IB", "tDOTsmitsAThs-mannheimDOTde");
+                    var groeschel = makeContributors("Groeschel", "Michael", "UIB", "mDOTgroeschelAThs-mannheimDOTde");
+                </script>
+            </div>
+            
+            <!-- CONTRIBUTORS CONHIT-->
+            <div id="conhit" onclick="Verbergen(this);">
+                <script type="text/javascript">
+                    var schmuecker = makeContributors("Schmuecker", "Paul", "IMB", "pDOTschmueckerAThs-mannheimDOTde");
+                    var felsenheimer = makeContributors("Felsenheimer", "Jan", "IB", "jDOTfelsenheimerATdiebestebaendderweltDOTde");
+                </script>
+            </div>
+            
+            <!-- CONTRIBUTORS WEBTECHCON-->
+            <div id="webtechcon" onclick="Verbergen(this);">
+                <script type="text/javascript">
+                    var spies = makeContributors("Spies", "Marcell", "IB", "mDOTSpiesATgmailDOTde");
+                    var hoppe = makeContributors("Hoppe", "Johannes", "UIB", "jDOThoppeATgmxDOTde");
+                    var hofmeister = makeContributors("Hofmeister", "Johannes", "UIB", "cessorATgmailDOTde");
+                </script>
+            </div>
+            
+            <!-- SECOND TABLE WRITE  ???? evtl in jedes onclick dings eine eigene
+             for each mit allen angelegten objekten-->
+            <script type="text/javascript">            
+            for (var eigenschaft in schmuecker) {
+                document.write(
+                "<tr><td>" + eigenschaft + "</td>" +
+                "<td><code>" + schmuecker[eigenschaft] + "</code></td></tr>"
+                );
+            }
+            </script>
+            
+            </table>
+        </div>
         
-        
-        <div id="zur�ck">
-            <a href="index.html">Zur�ck</a>
+        <div id="zur&uuml;ck">
+            <a href="index.html">Zur&uuml;ck</a>
         </div>
     </div>
 
