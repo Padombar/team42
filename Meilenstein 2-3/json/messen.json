@@ -1,0 +1,18 @@
+{
+	"messen": [
+	{
+		"Messe": "Cebit",
+		"Selbstkostenanteil": "15"
+	},
+
+	{
+		"Messe": "Conhit",
+		"Selbstkostenanteil": "50"
+	},
+	
+	{
+		"Messe": "WebTechCon",
+		"Selbstkostenanteil": "300"
+	}
+	]
+}
