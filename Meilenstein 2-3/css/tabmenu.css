@@ -21,12 +21,12 @@ body {
 }
 
 #tabMenu{
-
     margin: 2% 20% 0% 20%;
 
 }
 
-#messeTabelle{
+#kostenTabelle{
+    position: absolute;
 
 }
 
@@ -49,7 +49,21 @@ body {
 
 #teilnehmerTabellen{
     visibility: hidden;
+}
 
+#cebitTabelle{
+    visibility: hidden;
+    position: absolute;
+}
+
+#webcontechTabelle{
+    visibility: hidden;
+    position: absolute;
+}
+
+#conhitTabelle{
+    visibility: hidden;
+    position: absolute;
 }
 
 #zurueck{

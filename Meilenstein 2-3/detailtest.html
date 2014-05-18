@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="css/tabmenu.css" type="text/css">
     
     <script  src="js/tabmenu.js" type="text/javascript"> </script>
-    <script src="detailTest.js" type="text/javascript"> </script>
+    <script src="js/detailTest.js" type="text/javascript"> </script>
     <script src="json/cebit.json" type="text/json"></script>
-    <noscript>HA HA, du hast kein JavaScript</noscript>
+    <noscript>HA HA, du hast kein JavaScript aktiviert</noscript>
     <title> </title>
 </head>
 
 <body>
 
     <div id="wrapper">
-        
         <div id="titel_Box">
             <div id="titel_Logo">
                 <img src="Bilder/Team_Logo_42.jpg"  width=250 height=110 alt="logo42">
@@ -52,16 +51,12 @@
                     <col width="160">
                 </colgroup>
                 <th id="teilnehmerTabCebit" onclick="cebitContent()" >Cebit</th>
-                <th id="teilnehmerTabConhit" onclick="conitContent()">Conhit</th>
+                <th id="teilnehmerTabConhit" onclick="conhitContent()">Conhit</th>
                 <th id="teilnehmerTabWebConTech" onclick="webtechconContent()">WebTech Con</th>
 
              </table>
         </div>
-
-        
-        
-        
-        
+    
         
         <!--Kostentabelle-->
         <div id="kostenTabelle">
@@ -71,21 +66,21 @@
                 <th>Messe</th>
                 <th>Selbstkosten</th>
             </tr>            
-            
-            
+                
             <script type="text/javascript">
                 messeTabelle();
             </script>
             
-
-            
             </table>
         </div>
-        </div>    
+        </div>
         
         
         
-                <!--Cebit Tabelle-->
+        <!--Teilnehmer Tabelle-->
+        <div id="teilnehmerTabellen">
+            
+        <!--Cebit Tabelle-->
         <div id="cebitTabelle">
         <div id="zweiteTabelle" onclick="Verbergen(this);">
             <table border="1" cellpadding="5" cellspacing="0">
@@ -96,81 +91,65 @@
                 <th>eMail</th>
             </tr>         
             
-            
             <script type="text/javascript">
                 cebitTabelle();
             </script>
-            
 
-            
             </table>
         </div>
         </div> 
+        <!-- Cebit Tabelle Ende -->
         
         
-                        <!--ConIT Tabelle-->
-        <div id="conitTabelle">
-        <div id="zweiteTabelle" onclick="Verbergen(this);">
+        <!-- Conhit Tabelle-->
+        <div id="conhitTabelle">
+        <div id="dritteTabelle" onclick="Verbergen(this);">
             <table border="1" cellpadding="5" cellspacing="0">
                 <tr>
                 <th>Name</th>
                 <th>Vorname</th>
                 <th>Studiengang</th>
                 <th>eMail</th>
-            </tr>         
-            
+            </tr>               
             
             <script type="text/javascript">
-                conitTabelle();
+                conhitTabelle();
             </script>
-            
 
-            
             </table>
         </div>
         </div> 
-  
-  
+        <!-- Conhit Tabelle Ende-->
+        
+        
+        <!-- Webtechcon Tabelle-->
+        <div id="webtechconTabelle">
+        <div id="vierteTabelle" onclick="Verbergen(this);">
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                <th>Name</th>
+                <th>Vorname</th>
+                <th>Studiengang</th>
+                <th>eMail</th>
+            </tr>               
             
-            
-            
-            
-            
-            
-            
-            <!-- CONTRIBUTORS CONHIT-->
-            <div id="conhit" onclick="Verbergen(this);">
-                <script type="text/javascript">
-                    var schmuecker = makeContributors("Schmuecker", "Paul", "IMB", "pDOTschmueckerAThs-mannheimDOTde");
-                    var felsenheimer = makeContributors("Felsenheimer", "Jan", "IB", "jDOTfelsenheimerATdiebestebaendderweltDOTde");
-                </script>
-            </div>
-            
-            <!-- CONTRIBUTORS WEBTECHCON-->
-            <div id="webtechcon" onclick="Verbergen(this);">
-                <script type="text/javascript">
-                    var spies = makeContributors("Spies", "Marcell", "IB", "mDOTSpiesATgmailDOTde");
-                    var hoppe = makeContributors("Hoppe", "Johannes", "UIB", "jDOThoppeATgmxDOTde");
-                    var hofmeister = makeContributors("Hofmeister", "Johannes", "UIB", "cessorATgmailDOTde");
-                </script>
-            </div>
-            
-            <!-- SECOND TABLE WRITE  ???? evtl in jedes onclick dings eine eigene
-             for each mit allen angelegten objekten-->
-            <script type="text/javascript">            
-            for (var eigenschaft in schmuecker) {
-                document.write(
-                "<tr><td>" + eigenschaft + "</td>" +
-                "<td><code>" + schmuecker[eigenschaft] + "</code></td></tr>"
-                );
-            }
+            <script type="text/javascript">
+                webtechconTabelle();
             </script>
-            
+
             </table>
+        </div>
+        </div> 
+        <!--Webtechcon Tabelle Ende-->
+            
+        </div>
+        <!--Teilnehmer Tabelle Ende-->
+            
+
         </div>
 
         <div id="zurueck">
-            <a href="index.html">Zurück</a>
+            <a href="index.html">Zur&uuml;ck</a>
         </div>
     </div>
 
