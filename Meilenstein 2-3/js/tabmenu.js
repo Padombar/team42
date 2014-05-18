@@ -7,7 +7,7 @@ function teilnehmerContent(){
     document.getElementById("teilnehmerTabCebit").style.backgroundColor = "#00a4eb";
     document.getElementById("teilnehmerTabConhit").style.backgroundColor = "transparent";
     document.getElementById("teilnehmerTabWebConTech").style.backgroundColor = "transparent";
-    document.getElementById("teilnehmerTabellen").style.visibility ='hidden';
+    document.getElementById("teilnehmerTabellen").style.visibility ='visible';
     document.getElementById("cebitTabelle").style.visibility ='visible';
     document.getElementById("conhitTabelle").style.visibility ='hidden';
     document.getElementById("webtechconTabelle").style.visibility ='hidden';
