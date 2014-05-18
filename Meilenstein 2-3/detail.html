@@ -4,14 +4,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="css/tabmenu.css" type="text/css">
-    <script  src="js/tabmenu.js"> type="text/javascript" </script>
-    <title> </title>
+    
+    <script src="js/tabmenu.js" type="text/javascript"> </script>
+    <script src="js/detailTest.js" type="text/javascript"> </script>
+    <script src="js/cebit.json" type="text/json"></script>
+    
+    <title>Details zur Anmeldung</title>
 </head>
 
 <body>
-
+<script src="js/cebit.json" type="text/json"></script>
     <div id="wrapper">
         
+        <!-- Logo -->
         <div id="titel_Box">
             <div id="titel_Logo">
                 <img src="Bilder/Team_Logo_42.jpg"  width=250 height=110 alt="logo42">
@@ -22,142 +27,80 @@
 
         <div id="topTextDetail"><h1>Details zur Anmeldung</h1></div>
 
-        <!-- Tab Menü -->
+        <!-- Tab Menuebereich -->
         <div id="tabMenu">
 
-        <div id="detailMainTabs">
-            <table border="1">
-                <tr>
+            <div id="detailMainTabs">
+                <table border="1">
+                    <tr>
+                        <colgroup>
+                            <col width="241">
+                            <col width="241">
+                        </colgroup>
+                        <th id="messe" class ='mainTab' onclick="kostenContent()">Kosten der Messe</th>
+                        <th id="teilnehmer" class="" onclick="teilnehmerContent()">Teilnehmer</th>
+                    </tr>
+                </table>
+            </div>
+    
+            
+            <!-- unterer Tab mit den Messen-->
+            <div id="teilnehmerTabBox">
+                <table border="1">
                     <colgroup>
-                        <col width="241">
-                        <col width="241">
+                        <col width="160">
+                        <col width="160">
+                        <col width="160">
                     </colgroup>
-                    <th id="messe" class ='mainTab' onclick="kostenContent()">Kosten der Messe</th>
-                    <th id="teilnehmer" class="" onclick="teilnehmerContent()">Teilnehmer</th>
-                </tr>
-            </table>
-        </div>
-
-        <div id="teilnehmerTabBox">
-            <table border="1">
-                <colgroup>
-                    <col width="160">
-                    <col width="160">
-                    <col width="160">
-                </colgroup>
-                <th id="teilnehmerTabCebit" onclick="cebitContent()" >Cebit</th>
-                <th id="teilnehmerTabConhit" onclick="conitContent()">Conhit</th>
-                <th id="teilnehmerTabWebConTech" onclick="webtechconContent()">WebTech Con</th>
-
-             </table>
-        </div>
-
-        <!--Kostentabelle-->
-        <div id="kostenTabelle">
-            <table border="1" cellpadding="5" cellspacing="0">
-                <tr>
-                <th>Messe</th>
-                <th>Selbstkosten</th>
-            </tr>
-          
-            <script type="text/javascript">
+                    <th id="teilnehmerTabCebit" onclick="cebitContent()">Cebit</th>
+                    <th id="teilnehmerTabConhit" onclick="conhitContent()">Conhit</th>
+                    <th id="teilnehmerTabWebConTech" onclick="webtechconContent()">WebTech Con</th>
+    
+                 </table>
+            </div>
+        
+            
+            <!--Kostentabelle-->
+            <div id="kostenTabelle">
+                <script type="text/javascript">
+                    kostenTabelle();
+                </script>
+            </div>
+    
+            
+            <!--Teilnehmer Tabelle-->
+            <div id="teilnehmerTabellen">
                 
-            var messe = new Array();
-            messe["CeBIT"] = "15 €";
-            messe["ConhIT"] = "30 €";
-            messe["WebTech Con"] = "300 €";
+                <!--Cebit Tabelle-->
+                <div id="cebitTabelle">
+                    <script type="text/javascript">
+                        cebitTabelle();
+                    </script>
+                </div>
+        
+                <!-- ConhIT Tabelle -->
+                <div id="conhitTabelle">
+                    <script type="text/javascript">
+                           conhitTabelle();
+                    </script>
+                </div>
+        
+                <!-- WebTech Con Tabelle -->
+                <div id="webtechconTabelle">
+                    <script type="text/javascript">
+                        webtechconTabelle();
+                    </script>
+                </div>
+                
+            </div>
             
-            for (var eigenschaft in messe) {
-                document.write(
-                "<tr><td>" + eigenschaft + "</td>" +
-                "<td><code>" + messe[eigenschaft] + "</code></td></tr>"
-                );
-            }
-            </script>
-            
-            </table>
-        </div>
-        </div>
-
-        <!-- Teilnehmer Tabelle-->
-        <div id ='teilnehmerTabellen'>
-           Hier müssen unsere Teinehmer-Tabellen rein
-        </div>
         </div>
         
-        <!-- SECOND TABLE -->
-        <div id="zweiteTabelle" onclick="Verbergen(this);">
-            <table border="1" cellpadding="5" cellspacing="0">
-                <tr>
-                <th>Name</th>
-                <th>Vorname</th>
-                <th>Studiengang</th>
-                <th>eMail</th>
-            </tr>
-          
-            <!-- CONTRIBUTORS FACTORY-->
-            <script type="text/javascript">
-            function makeContributors(name, vorname, studiengang, email) {
-                var that = new Object();
-                that.name = name;
-                that.vorname = vorname;
-                that.studiengang = studiengang;
-                that.email = email;
-                
-                <!-- ???? -->
-                that.details = function() {
-                    return "Name: " + this.name 
-                        + ", geboren: " + this.geboren;
-                };
-                
-                return that;
-            }
-            </script>
-            
-            <!-- CONTRIBUTORS CEBIT-->
-            <div id="cebit" onclick="Verbergen(this);">
-                <script type="text/javascript">
-                    var ent = makeContributors("Ent", "Thilo", "IB", "tDOTentATgmailDOTde");
-                    var kraus = makeContributors("Kraus", "Martina", "IB", "mDOTkrausAThs-mannheimDOTde");
-                    var smits = makeContributors("Smits", "Thomas", "IB", "tDOTsmitsAThs-mannheimDOTde");
-                    var groeschel = makeContributors("Groeschel", "Michael", "UIB", "mDOTgroeschelAThs-mannheimDOTde");
-                </script>
-            </div>
-            
-            <!-- CONTRIBUTORS CONHIT-->
-            <div id="conhit" onclick="Verbergen(this);">
-                <script type="text/javascript">
-                    var schmuecker = makeContributors("Schmuecker", "Paul", "IMB", "pDOTschmueckerAThs-mannheimDOTde");
-                    var felsenheimer = makeContributors("Felsenheimer", "Jan", "IB", "jDOTfelsenheimerATdiebestebaendderweltDOTde");
-                </script>
-            </div>
-            
-            <!-- CONTRIBUTORS WEBTECHCON-->
-            <div id="webtechcon" onclick="Verbergen(this);">
-                <script type="text/javascript">
-                    var spies = makeContributors("Spies", "Marcell", "IB", "mDOTSpiesATgmailDOTde");
-                    var hoppe = makeContributors("Hoppe", "Johannes", "UIB", "jDOThoppeATgmxDOTde");
-                    var hofmeister = makeContributors("Hofmeister", "Johannes", "UIB", "cessorATgmailDOTde");
-                </script>
-            </div>
-            
-            <!-- SECOND TABLE WRITE  ???? evtl in jedes onclick dings eine eigene
-             for each mit allen angelegten objekten-->
-            <script type="text/javascript">            
-            for (var eigenschaft in schmuecker) {
-                document.write(
-                "<tr><td>" + eigenschaft + "</td>" +
-                "<td><code>" + schmuecker[eigenschaft] + "</code></td></tr>"
-                );
-            }
-            </script>
-            
-            </table>
-        </div>
-
+        <!-- Zurück zur Hauptseite -->
         <div id="zurueck">
-            <a href="index.html">Zurück</a>
+            <a href="index.html">Zur&uuml;ck</a>
         </div>
+        
     </div>
 
 </body>

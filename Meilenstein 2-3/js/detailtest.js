@@ -19,9 +19,6 @@ var webtechJSON = {"webtech":[
     }
 ]};
 
-
-
-
   var conhitJSON ={"conhit": [
     {
         "name": "Schmuecker",
@@ -131,10 +128,3 @@ function conhitTabelle(){
     }
     document.write("</table>");
 }
-
-
-
-
-
-
-
