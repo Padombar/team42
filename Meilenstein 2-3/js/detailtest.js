@@ -105,7 +105,7 @@ function cebitTabelle(){
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<cebitJSON.cebit.length;i++){
-    document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td>'+cebitJSON.cebit[i].studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
+    document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td>'+cebitJSON.cebit[i].Studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
@@ -116,7 +116,7 @@ function webtechconTabelle(){
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<webtechJSON.webtech.length;i++){
-        document.write(' <tr><td>'+webtechJSON.webtech[i].name+'</td><td>'+webtechJSON.webtech[i].Vorname+'</td><td>'+webtechJSON.webtech[i].studiengang+'</td><td>'+webtechJSON.webtech[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+webtechJSON.webtech[i].name+'</td><td>'+webtechJSON.webtech[i].Vorname+'</td><td>'+webtechJSON.webtech[i].Studiengang+'</td><td>'+webtechJSON.webtech[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
@@ -127,7 +127,7 @@ function conhitTabelle(){
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<conhitJSON.conhit.length;i++){
-        document.write(' <tr><td>'+conhitJSON.conhit[i].name+'</td><td>'+conhitJSON.conhit[i].Vorname+'</td><td>'+conhitJSON.conhit[i].studiengang+'</td><td>'+conhitJSON.conhit[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+conhitJSON.conhit[i].name+'</td><td>'+conhitJSON.conhit[i].Vorname+'</td><td>'+conhitJSON.conhit[i].Studiengang+'</td><td>'+conhitJSON.conhit[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
