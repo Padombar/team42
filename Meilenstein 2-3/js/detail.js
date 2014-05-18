@@ -85,7 +85,7 @@ var webtechJSON = {"webtech":[
   ]};
 
 
-function kostenTabelle(){
+function kostenTabelle() {
 
     document.write('<table border="1" cellpadding="5" cellspacing="0">');
     document.write(' <tr><th>Messe</th><th>Selbstkostenanteil</th></tr>');
@@ -96,7 +96,7 @@ function kostenTabelle(){
     document.write("</table>");
 }
 
-function cebitTabelle(){
+function cebitTabelle() {
 
     document.write('<table border="1" cellpadding="5" cellspacing="0">');
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
@@ -107,7 +107,7 @@ function cebitTabelle(){
     document.write("</table>");
 }
 
-function webtechconTabelle(){
+function webtechconTabelle() {
 
     document.write('<table border="1" cellpadding="5" cellspacing="0">');
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
@@ -118,7 +118,7 @@ function webtechconTabelle(){
     document.write("</table>");
 }
 
-function conhitTabelle(){
+function conhitTabelle() {
 
     document.write('<table border="1" cellpadding="5" cellspacing="0">');
     document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
