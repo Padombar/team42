@@ -163,7 +163,7 @@ function cebitTabelle() {
     document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<cebitJSON.cebit.length;i++){
-    document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td>'+cebitJSON.cebit[i].Studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td >'+cebitJSON.cebit[i].Studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
