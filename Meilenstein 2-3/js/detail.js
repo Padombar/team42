@@ -87,8 +87,8 @@ var webtechJSON = {"webtech":[
 
 function kostenTabelle() {
 
-    document.write('<table border="1" cellpadding="5" cellspacing="0">');
-    document.write(' <tr><th>Messe</th><th>Selbstkostenanteil</th></tr>');
+    document.write('<table class ="kostentable" border="1" cellpadding="5" cellspacing="0">');
+    document.write(' <tr id ="kostentableheader"><th>Messe</th><th>Selbstkostenanteil</th></tr>');
 
     for(i=0; i<kostenJSON.kosten.length;i++){
         document.write(' <tr><td>'+kostenJSON.kosten[i].Messe+'</td><td>'+kostenJSON.kosten[i].Selbstkostenanteil+' €'+'</td></tr>');
@@ -98,8 +98,8 @@ function kostenTabelle() {
 
 function cebitTabelle() {
 
-    document.write('<table border="1" cellpadding="5" cellspacing="0">');
-    document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
+    document.write('<table class="teilnehmertable" border="1" cellpadding="5" cellspacing="0">');
+    document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<cebitJSON.cebit.length;i++){
     document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td>'+cebitJSON.cebit[i].Studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
@@ -109,8 +109,8 @@ function cebitTabelle() {
 
 function webtechconTabelle() {
 
-    document.write('<table border="1" cellpadding="5" cellspacing="0">');
-    document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
+    document.write('<table class="teilnehmertable" border="1" cellpadding="5" cellspacing="0">');
+    document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<webtechJSON.webtech.length;i++){
         document.write(' <tr><td>'+webtechJSON.webtech[i].name+'</td><td>'+webtechJSON.webtech[i].Vorname+'</td><td>'+webtechJSON.webtech[i].Studiengang+'</td><td>'+webtechJSON.webtech[i].eMail+'</td></tr>');
@@ -120,8 +120,8 @@ function webtechconTabelle() {
 
 function conhitTabelle() {
 
-    document.write('<table border="1" cellpadding="5" cellspacing="0">');
-    document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
+    document.write('<table class="teilnehmertable" border="1" cellpadding="5" cellspacing="0">');
+    document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<conhitJSON.conhit.length;i++){
         document.write(' <tr><td>'+conhitJSON.conhit[i].name+'</td><td>'+conhitJSON.conhit[i].Vorname+'</td><td>'+conhitJSON.conhit[i].Studiengang+'</td><td>'+conhitJSON.conhit[i].eMail+'</td></tr>');

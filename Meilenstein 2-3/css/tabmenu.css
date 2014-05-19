@@ -1,3 +1,4 @@
+
 @import url(main.css);
 
 
@@ -11,6 +12,7 @@ body {
 }
 
 .mainTab{
+    color : #F9F9F9;
     margin: 0;
     background-color: #3f47cc;
 }
@@ -71,4 +73,23 @@ body {
     margin-right: 10%;
 
 }
+
+.kostentable{
+    text-align: left;
+}
+
+#kostentableheader{
+    text-align: center;
+    color: #3f47cc;
+}
+
+.teilnehmertable{
+    text-align: left;
+}
+.teilnehmertableheader{
+    text-align: center;
+    color: #3f47cc;
+}
+
+
 

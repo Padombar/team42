@@ -1,5 +1,7 @@
 
 function teilnehmerContent(){
+    document.getElementById("teilnehmer").style.color ="#F9F9F9";
+    document.getElementById("messe").style.color ="#000000";
     document.getElementById("teilnehmer").style.backgroundColor ="#3f47cc";
     document.getElementById("messe").style.backgroundColor = "transparent";
     document.getElementById("kostenTabelle").style.visibility = 'hidden';
@@ -15,6 +17,8 @@ function teilnehmerContent(){
 
 
 function kostenContent(){
+    document.getElementById("teilnehmer").style.color ="#000000";
+    document.getElementById("messe").style.color ="#F9F9F9";
     document.getElementById("teilnehmer").style.backgroundColor ="transparent";
     document.getElementById("messe").style.backgroundColor = "#3f47cc";
     document.getElementById("kostenTabelle").style.visibility ='visible';
