@@ -24,6 +24,7 @@
 }
 
 #kostenTabelle{
+    width: 328px;
     margin: 0px 120px 0px 120px;
     position: absolute;
 }
@@ -51,7 +52,7 @@
 }
 
 .kostentable{
-    text-align: left;
+    text-align: center;
 }
 
 #kostentableheader{
@@ -67,6 +68,8 @@
     text-align: center;
     color: #3f47cc;
 }
+
+#paddingLeft { padding-left: 30px;}
 
 #zurueck{
     float: right;

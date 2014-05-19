@@ -148,8 +148,8 @@ var webtechJSON = {"webtech":[
 /* Tabellen erstellen und mit JSON-Objekten beschreiben */
 function kostenTabelle() {
 
-    document.write('<table class ="kostentable"  border="1" cellpadding="5" cellspacing="0">');
-    document.write(' <tr id ="kostentableheader"><th>Messe</th><th>Selbstkostenanteil</th></tr>');
+    document.write('<table class ="kostentable" width="100%" border="1" cellpadding="5" cellspacing="0">');
+    document.write(' <tr id ="kostentableheader"><th>Messe</th><th>Selbstkosten</th></tr>');
 
     for(i=0; i<kostenJSON.kosten.length;i++){
         document.write(' <tr><td>'+kostenJSON.kosten[i].Messe+'</td><td>'+kostenJSON.kosten[i].Selbstkostenanteil+' €'+'</td></tr>');
@@ -163,7 +163,7 @@ function cebitTabelle() {
     document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<cebitJSON.cebit.length;i++){
-        document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td >'+cebitJSON.cebit[i].Studiengang+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+cebitJSON.cebit[i].name+'</td><td>'+cebitJSON.cebit[i].Vorname+'</td><td >'+'<span id="paddingLeft">'+cebitJSON.cebit[i].Studiengang+'</span>'+'</td><td>'+cebitJSON.cebit[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
@@ -174,7 +174,7 @@ function webtechconTabelle() {
     document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<webtechJSON.webtech.length;i++){
-        document.write(' <tr><td>'+webtechJSON.webtech[i].name+'</td><td>'+webtechJSON.webtech[i].Vorname+'</td><td>'+webtechJSON.webtech[i].Studiengang+'</td><td>'+webtechJSON.webtech[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+webtechJSON.webtech[i].name+'</td><td>'+webtechJSON.webtech[i].Vorname+'</td><td>'+'<span id="paddingLeft">'+webtechJSON.webtech[i].Studiengang+'</span>'+'</td><td>'+webtechJSON.webtech[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
@@ -185,7 +185,7 @@ function conhitTabelle() {
     document.write(' <tr class="teilnehmertableheader"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>eMail</th></tr>');
 
     for(i=0; i<conhitJSON.conhit.length;i++){
-        document.write(' <tr><td>'+conhitJSON.conhit[i].name+'</td><td>'+conhitJSON.conhit[i].Vorname+'</td><td>'+conhitJSON.conhit[i].Studiengang+'</td><td>'+conhitJSON.conhit[i].eMail+'</td></tr>');
+        document.write(' <tr><td>'+conhitJSON.conhit[i].name+'</td><td>'+conhitJSON.conhit[i].Vorname+'</td><td>'+'<span id="paddingLeft">'+conhitJSON.conhit[i].Studiengang+'</span>'+'</td><td>'+conhitJSON.conhit[i].eMail+'</td></tr>');
     }
     document.write("</table>");
 }
