@@ -12,13 +12,13 @@ body {
 }
 
 #topTextDetail{
-    margin-left: 26%;
+    margin-left: 39.5%;
 
 }
 
 #tabMenu{
     width: 484px;
-    margin: 2% 20% 0% 20%;
+    margin: 2% 20% 0% 35%;
 
 }
 
@@ -92,7 +92,8 @@ body {
 
 #zurueck{
     float: right;
-    margin-right: 10%;
+    margin-top: 20%;
+    margin-right: 14%;
 }
 
 
