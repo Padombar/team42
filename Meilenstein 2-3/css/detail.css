@@ -1,26 +1,13 @@
-
 @import url(main.css);
-
-
-
-body {
-
-}
-
-#wrapper{
-
-}
 
 #topTextDetail{
     font-size: 13px;
     margin-left: 41.5%;
-
 }
 
 #tabMenu{
     width: 484px;
     margin: 1% 20% 0% 35%;
-
 }
 
 .mainTab{
