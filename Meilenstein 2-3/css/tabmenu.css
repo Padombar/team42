@@ -11,25 +11,21 @@ body {
 
 }
 
-.mainTab{
-    color : #F9F9F9;
-    margin: 0;
-    background-color: #3f47cc;
-}
-
 #topTextDetail{
     margin-left: 26%;
 
 }
 
 #tabMenu{
+    width: 484px;
     margin: 2% 20% 0% 20%;
 
 }
 
-#kostenTabelle{
-    position: absolute;
-
+.mainTab{
+    color : #F9F9F9;
+    margin: 0;
+    background-color: #3f47cc;
 }
 
 #teilnehmerTabBox{
@@ -49,29 +45,31 @@ body {
 
 }
 
+#kostenTabelle{
+    margin: 0px 120px 0px 120px;
+    position: absolute;
+}
+
 #teilnehmerTabellen{
     visibility: hidden;
 }
 
 #cebitTabelle{
+    width: 484px;
     visibility: hidden;
     position: absolute;
 }
 
 #webtechconTabelle{
+    width: 484px;
     visibility: hidden;
     position: absolute;
 }
 
 #conhitTabelle{
+    width: 484px;
     visibility: hidden;
     position: absolute;
-}
-
-#zurueck{
-    float: right;
-    margin-right: 10%;
-
 }
 
 .kostentable{
@@ -86,10 +84,17 @@ body {
 .teilnehmertable{
     text-align: left;
 }
+
 .teilnehmertableheader{
     text-align: center;
     color: #3f47cc;
 }
+
+#zurueck{
+    float: right;
+    margin-right: 10%;
+}
+
 
 
 
