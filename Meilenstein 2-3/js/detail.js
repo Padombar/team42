@@ -61,90 +61,21 @@ function webtechconContent() {
     document.getElementById("webtechconTabelle").style.visibility = 'visible';
 }
 
+function loadPage(url){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", url, false);
+    xmlhttp.send();
+    return xmlhttp.responseText;
+}
+
 /* JSON-Objekte */
-var webtechJSON = {"webtech": [
-    {
-        "name": "Spies",
-        "Vorname": "Marcell",
-        "Studiengang": "IB",
-        "eMail": "m.spies@gmail.com"
-    },
-    {
-        "name": "Hoppe",
-        "Vorname": "Johannes",
-        "Studiengang": "UIB",
-        "eMail": "j.hoppe@gmx.de"
-    },
-    {
-        "name": "Hofmeister",
-        "Vorname": "Johannes",
-        "Studiengang": "UIB",
-        "eMail": "cessor@gmail.de"
-    }
-]};
+var webtechJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/webtech.json"));
 
-var conhitJSON = {"conhit": [
-    {
-        "name": "Schmuecker",
-        "Vorname": "Paul",
-        "Studiengang": "IMB",
-        "eMail": "p.schmuecker@hs-mannheim.de"
-    },
-    {
-        "name": "Felsenheimer",
-        "Vorname": "Jan",
-        "Studiengang": "IB",
-        "eMail": "j.felsenheimer@hs-mannheim.de"
-    }
-]};
+var conhitJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/conhit.json"));
 
-var cebitJSON = {"cebit": [
-    {
-        "name": "Ent",
-        "Vorname": "Thilo",
-        "Studiengang": "IB",
-        "eMail": "t.ent@gmail.de"
-    },
-    {
-        "name": "Kraus",
-        "Vorname": "Martina",
-        "Studiengang": "IB",
-        "eMail": "m.kraus@hs-mannheim.de"
-    },
-    {
-        "name": "Smits",
-        "Vorname": "Thomas",
-        "Studiengang": "UIB",
-        "eMail": "t.smits@hs-mannheim.de"
-    },
-    {
-        "name": "Groeschel",
-        "Vorname": "Michael",
-        "Studiengang": "UIB",
-        "eMail": "m.groeschel@hs-mannheim.de"
-    },
-    {
-        "name": "Ent",
-        "Vorname": "Thilo",
-        "Studiengang": "IB",
-        "eMail": "t.ent@gmail.de"
-    }
-]};
+var cebitJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/cebit.json"));
 
-var kostenJSON = {"kosten": [
-    {
-        "Messe": "Cebit",
-        "Selbstkostenanteil": "15"
-    },
-    {
-        "Messe": "Conhit",
-        "Selbstkostenanteil": "50"
-    },
-    {
-        "Messe": "WebTechCon",
-        "Selbstkostenanteil": "300"
-    }
-]};
+var kostenJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/kosten.json"));
 
 /* Tabellen erstellen und mit JSON-Objekten beschreiben */
 function kostenTabelle() {

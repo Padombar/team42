@@ -1,0 +1,26 @@
+{"cebit": [
+    {
+        "name": "Ent",
+        "Vorname": "Thilo",
+        "Studiengang": "IB",
+        "eMail": "t.ent@gmail.de"
+    },
+    {
+        "name": "Kraus",
+        "Vorname": "Martina",
+        "Studiengang": "IB",
+        "eMail": "m.kraus@hs-mannheim.de"
+    },
+    {
+        "name": "Smits",
+        "Vorname": "Thomas",
+        "Studiengang": "UIB",
+        "eMail": "t.smits@hs-mannheim.de"
+    },
+    {
+        "name": "Groeschel",
+        "Vorname": "Michael",
+        "Studiengang": "UIB",
+        "eMail": "m.groeschel@hs-mannheim.de"
+    }
+    ]}
