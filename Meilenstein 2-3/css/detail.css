@@ -69,7 +69,9 @@
     color: #3f47cc;
 }
 
-#paddingLeft { padding-left: 30px;}
+#paddingLeft{
+    padding-left: 30px;
+}
 
 #zurueck{
     float: right;

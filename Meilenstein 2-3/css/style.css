@@ -3,6 +3,7 @@
 body {
     color: #5F5F5F;
     font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
+    font-weight: 400;
 }
 
 #titel_box{
@@ -44,5 +45,3 @@ h1{
     margin-right: 14%;
     margin-bottom: 5%;
 }
-
-
