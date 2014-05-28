@@ -46,7 +46,7 @@ function validHandynummer(mobilNr) {
 
 function checkForm(){
 
-        bool
+
 
         var fehlerAusgabe='';
 
