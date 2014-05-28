@@ -53,52 +53,83 @@ function checkForm(){
 
     if (document.forms[0].handynummer.value==""){
         fehlerAusgabe = "Feld Handynummer ist leer\n"+fehlerAusgabe
+        document.forms[0].handynummer.style.borderColor = "red";
         document.forms[0].handynummer.focus();
     }
-
     else if (!validHandynummer(document.forms[0].handynummer.value)){
         fehlerAusgabe = "Ihr Handynummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        document.forms[0].handynummer.style.borderColor = "red";
         document.forms[0].handynummer.focus();
     }
-
-    if (document.forms[0].mail.value==""){
-        fehlerAusgabe = "Feld E-Mail ist leer\n"+fehlerAusgabe;
-        document.forms[0].mail.focus();
+    else{
+        document.forms[0].handynummer.style.borderColor = "transparent";
     }
 
-    else if (!validEmail(document.forms[0].mail.value)){
-        fehlerAusgabe = "In der E-Mail-Adresse wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        document.forms[0].mail.focus();
-    }
+
 
     if (document.forms[0].matrikelnummer.value==""){
         fehlerAusgabe = "Feld Matrikelnummer ist leer\n"+fehlerAusgabe;
+        document.forms[0].matrikelnummer.style.borderColor = "red";
         document.forms[0].matrikelnummer.focus();
     }
-
     else if (!validMatrikelnummer(document.forms[0].matrikelnummer.value)){
         fehlerAusgabe = "Ihr Matrikelnummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        document.forms[0].matrikelnummer.style.borderColor = "red";
         document.forms[0].matrikelnummer.focus();
     }
+    else{
+        document.forms[0].matrikelnummer.style.borderColor = "transparent";
+    }
+
+
+
+    if (document.forms[0].mail.value==""){
+        fehlerAusgabe = "Feld E-Mail ist leer\n"+fehlerAusgabe;
+        document.forms[0].mail.style.borderColor = "red";
+        document.forms[0].mail.focus();
+    }
+    else if (!validEmail(document.forms[0].mail.value)){
+        fehlerAusgabe = "In der E-Mail-Adresse wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        document.forms[0].mail.style.borderColor = "red";
+        document.forms[0].mail.focus();
+    }
+    else{
+        document.forms[0].mail.style.borderColor = "transparent";
+    }
+
+
+
 
     if (document.forms[0].nachname.value==""){
         fehlerAusgabe = "Feld Nachname ist leer\n"+fehlerAusgabe;
+        document.forms[0].nachname.style.borderColor = "red";
         document.forms[0].nachname.focus();
     }
-
     else if (!validName(document.forms[0].nachname.value)){
         fehlerAusgabe = "Ihr Nachname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        document.forms[0].nachname.style.borderColor = "red";
         document.forms[0].nachname.focus();
     }
+    else{
+        document.forms[0].nachname.style.borderColor = "transparent";
+    }
+
+
 
     if (document.forms[0].vorname.value==""){
-            fehlerAusgabe = "Feld Vorname ist leer\n"+fehlerAusgabe;
-            document.forms[0].vorname.focus();
+        fehlerAusgabe = "Feld Vorname ist leer\n"+fehlerAusgabe;
+        document.forms[0].vorname.style.borderColor = "red";
+        document.forms[0].vorname.focus();
     }
 
     else if (!validName(document.forms[0].vorname.value)){
         fehlerAusgabe = "Ihr Vorname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        document.forms[0].vorname.style.borderColor = "red";
         document.forms[0].vorname.focus();
+    }
+
+    else{
+        document.forms[0].vorname.style.borderColor = "transparent";
     }
 
 
