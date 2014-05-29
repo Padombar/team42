@@ -1,10 +1,15 @@
-@import url(main.css);
+@import url(/../Meilenstein%202-3/css/main.css);
 
-#titel_Box{
+body{
+
+}
+
+#titel_Logo{
     margin-left: 10%;
 }
 
 #ueberschrift{
+    padding-top: 5%;
     margin-left: 4%;
 }
 
@@ -24,7 +29,7 @@
     float: left;
     width: 35%;
     margin-left: 4%;
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 12px;
     margin-right: 2%;
 }
