@@ -25,7 +25,7 @@ function validMatrikelnummer(matrNr) {
 }
 
 
-function validHandynummer(mobilNr) {
+function validhandy(mobilNr) {
 
     var strReg = "^0+([0-9]{10,11})+$";
     var regex = new RegExp(strReg);
@@ -37,64 +37,64 @@ function checkForm(){
     var fehlerAusgabe='';
 
 
-    if ($("input[name=handynummer]").val()==''){
+    if ($("input[name=handy]").val()==''){
         fehlerAusgabe = "Feld Handynummer ist leer\n"+fehlerAusgabe
-        $("input[name=handynummer]").css("borderColor","red");
-        $("input[name=handynummer]").focus();
+        $("input[name=handy]").css("borderColor","red");
+        $("input[name=handy]").focus();
     }
-    else if (!validHandynummer($("input[name=handynummer]").val())){
-        fehlerAusgabe = "Ihr Handynummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=handynummer]").css("borderColor","red");
-        $("input[name=handynummer]").focus();
+    else if (!validhandy($("input[name=handy]").val())){
+        fehlerAusgabe = "Ihre Handynummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
+        $("input[name=handy]").css("borderColor","red");
+        $("input[name=handy]").focus();
     }
     else{
-        $("input[name=handynummer]").css("borderColor","transparent");
+        $("input[name=handy]").css("borderColor","transparent");
     }
 
 
 
-    if ($("input[name=matrikelnummer]").val()==""){
+    if ($("input[name=matrikelnr]").val()==""){
         fehlerAusgabe = "Feld Matrikelnummer ist leer\n"+fehlerAusgabe;
-        $("input[name=matrikelnummer]").css("borderColor","red");
-        $("input[name=matrikelnummer]").focus();
+        $("input[name=matrikelnr]").css("borderColor","red");
+        $("input[name=matrikelnr]").focus();
     }
-    else if (!validMatrikelnummer($("input[name=matrikelnummer]").val())){
+    else if (!validMatrikelnummer($("input[name=matrikelnr]").val())){
         fehlerAusgabe = "Ihr Matrikelnummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=matrikelnummer]").css("borderColor","red");
-        $("input[name=matrikelnummer]").focus();
+        $("input[name=matrikelnr]").css("borderColor","red");
+        $("input[name=matrikelnr]").focus();
     }
     else{
-        $("input[name=matrikelnummer]").css("borderColor","transparent");
+        $("input[name=matrikelnr]").css("borderColor","transparent");
     }
 
 
 
-    if ($("input[name=mail]").val()==""){
+    if ($("input[name=email]").val()==""){
         fehlerAusgabe = "Feld E-Mail ist leer\n"+fehlerAusgabe;
-        $("input[name=mail]").css("borderColor","red");
-        $("input[name=mail]").focus();
+        $("input[name=email]").css("borderColor","red");
+        $("input[name=email]").focus();
     }
-    else if (!validEmail($("input[name=mail]").val())){
+    else if (!validEmail($("input[name=email]").val())){
         fehlerAusgabe = "In der E-Mail-Adresse wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=mail]").css("borderColor","red");
-        $("input[name=mail]").focus();
+        $("input[name=email]").css("borderColor","red");
+        $("input[name=email]").focus();
     }
     else{
-        $("input[name=mail]").css("borderColor","transparent");
+        $("input[name=email]").css("borderColor","transparent");
     }
 
 
 
 
-    if ($("input[name=nachname]").val()==""){
+    if ($("input[name=name]").val()==""){
         fehlerAusgabe = "Feld Nachname ist leer\n"+fehlerAusgabe;
-        $("input[name=nachname]").css("borderColor","red");
-        $("input[name=nachname]").focus();
+        $("input[name=name]").css("borderColor","red");
+        $("input[name=name]").focus();
     }
-    else if (!validName($("input[name=nachname]").val())){
+    else if (!validName($("input[name=name]").val())){
         fehlerAusgabe = "Ihr Nachname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=nachname]").css("borderColor","red");
-        $("input[name=nachname]").focus();
+        $("input[name=name]").css("borderColor","red");
+        $("input[name=name]").focus();
     }
     else{
         $("input[name=nachname]").css("borderColor","transparent");
