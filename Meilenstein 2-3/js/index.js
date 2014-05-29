@@ -46,7 +46,7 @@ function validHandynummer(mobilNr) {
 
 function checkForm(){
 
-        var fehlerAusgabe='';
+    var fehlerAusgabe='';
 
 
     if ($("input[name=handynummer]").val()==''){
@@ -129,10 +129,9 @@ function checkForm(){
     }
 
 
-        if (fehlerAusgabe.length>0) {
 
-            alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben\n\nFestgestellte Probleme: \n\n"+fehlerAusgabe);
-
-            return(false);
-        }
+    if (fehlerAusgabe.length>0) {
+        alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben\n\nFestgestellte Probleme: \n\n"+fehlerAusgabe);
+        return(false);
+    }
 }
