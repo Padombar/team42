@@ -39,48 +39,49 @@ function checkForm(){
 
     if ($("input[name=handy]").val()==''){
         fehlerAusgabe = "Feld Handynummer ist leer\n"+fehlerAusgabe
-        $("input[name=handy]").css("borderColor","red");
+        $("input[name=handy]").addClass("redBorder");
         $("input[name=handy]").focus();
+
     }
     else if (!validhandy($("input[name=handy]").val())){
         fehlerAusgabe = "Ihre Handynummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=handy]").css("borderColor","red");
+        $("input[name=handy]").addClass("redBorder");
         $("input[name=handy]").focus();
     }
     else{
-        $("input[name=handy]").css("borderColor","transparent");
+        $("input[name=handy]").removeClass("redBorder");
     }
 
 
 
     if ($("input[name=matrikelnr]").val()==""){
         fehlerAusgabe = "Feld Matrikelnummer ist leer\n"+fehlerAusgabe;
-        $("input[name=matrikelnr]").css("borderColor","red");
+        $("input[name=matrikelnr]").addClass("redBorder");
         $("input[name=matrikelnr]").focus();
     }
     else if (!validMatrikelnummer($("input[name=matrikelnr]").val())){
         fehlerAusgabe = "Ihr Matrikelnummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=matrikelnr]").css("borderColor","red");
+        $("input[name=matrikelnr]").addClass("redBorder");
         $("input[name=matrikelnr]").focus();
     }
     else{
-        $("input[name=matrikelnr]").css("borderColor","transparent");
+        $("input[name=matrikelnr]").removeClass("redBorder");
     }
 
 
 
     if ($("input[name=email]").val()==""){
         fehlerAusgabe = "Feld E-Mail ist leer\n"+fehlerAusgabe;
-        $("input[name=email]").css("borderColor","red");
+        $("input[name=email]").addClass("redBorder");
         $("input[name=email]").focus();
     }
     else if (!validEmail($("input[name=email]").val())){
         fehlerAusgabe = "In der E-Mail-Adresse wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=email]").css("borderColor","red");
+        $("input[name=email]").addClass("redBorder");
         $("input[name=email]").focus();
     }
     else{
-        $("input[name=email]").css("borderColor","transparent");
+        $("input[name=email]").removeClass("redBorder");
     }
 
 
@@ -88,32 +89,32 @@ function checkForm(){
 
     if ($("input[name=name]").val()==""){
         fehlerAusgabe = "Feld Nachname ist leer\n"+fehlerAusgabe;
-        $("input[name=name]").css("borderColor","red");
+        $("input[name=name]").addClass("redBorder");
         $("input[name=name]").focus();
     }
     else if (!validName($("input[name=name]").val())){
         fehlerAusgabe = "Ihr Nachname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=name]").css("borderColor","red");
+        $("input[name=name]").addClass("redBorder");
         $("input[name=name]").focus();
     }
     else{
-        $("input[name=name]").css("borderColor","transparent");
+        $("input[name=name]").removeClass("redBorder");
     }
 
 
 
     if ($("input[name=vormane]").val()==""){
         fehlerAusgabe = "Feld Vorname ist leer\n"+fehlerAusgabe;
-        $("input[name=vorname]").css("borderColor","red");
+        $("input[name=vorname]").addClass("redBorder");
         $("input[name=vorname]").focus();
     }
     else if (!validName($("input[name=vorname]").val())){
         fehlerAusgabe = "Ihr Vorname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=vorname]").css("borderColor","red");
+        $("input[name=vorname]").addClass("redBorder");
         $("input[name=vorname]").focus();
     }
     else{
-        $("input[name=vorname]").css("borderColor","transparent");
+        $("input[name=vorname]").removeClass("redBorder");
     }
 
 
