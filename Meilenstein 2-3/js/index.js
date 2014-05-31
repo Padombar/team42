@@ -5,21 +5,21 @@
 
 function validEmail(email) {
 
-    var strReg = "^([a-zA-Z0-9_\.\-])+\@([a-zA-Z0-9\-])+\.([a-zA-Z0-9]{2,4})+$";
+    var strReg = /^([^\s@,:"<>]+)@([^\s@,:"<>]+\.)([de|com|org|net]+)$/;
     var regex = new RegExp(strReg);
     return(regex.test(email));
 }
 
 function validName(name) {
 
-    var strReg = "^([a-zA-ZÖÄÜöäü])+$";
+    var strReg = /^([a-zA-ZÖÄÜöäü])+$/;
     var regex = new RegExp(strReg);
     return(regex.test(name));
 }
 
 function validMatrikelnummer(matrNr) {
 
-    var strReg = "^([0-9]{7,7})+$";
+    var strReg = /^([0-9]{7})+$/;
     var regex = new RegExp(strReg);
     return(regex.test(matrNr));
 }
@@ -27,7 +27,7 @@ function validMatrikelnummer(matrNr) {
 
 function validhandy(mobilNr) {
 
-    var strReg = "^0+([0-9]{10,11})+$";
+    var strReg = /^0+([0-9]{10,11})+$/;
     var regex = new RegExp(strReg);
     return(regex.test(mobilNr));
 }
