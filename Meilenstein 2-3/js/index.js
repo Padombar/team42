@@ -44,5 +44,5 @@ function checkForm() {
 }
 
 function borderColor(v){
-    v.style.borderColor = "red";
+    $( v ).addClass("red");
 }
