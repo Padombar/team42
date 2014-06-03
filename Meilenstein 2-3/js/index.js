@@ -1,126 +1,44 @@
-/**
- * Created by Sebastian on 28.05.14.
- */
+function pruefen() {
+    var gueltig = true;
 
+    if (!$("#handynummer").val().match("0+([0-9])")) {
+        borderColor(handynummer);
+        handynummer.focus();
+        gueltig = false;
+    }
 
-function validEmail(email) {
+    if (!$("#matrikelnummer").val().match("([0-9]){7}")) {
+        borderColor(matrikelnummer);
+        matrikelnummer.focus();
+        gueltig = false;
+    }
 
-    var strReg = /^([^\s@,:"<>]+)@([^\s@,:"<>]+\.)([DE|de|COM|com|ORG|org|NET|net]+)$/;
-    var regex = new RegExp(strReg);
-    return(regex.test(email));
+    var filter = '^[a-zA-Z0-9äöü._%+-]+@[a-zA-Z0-9äöüÄÖÜ.-]+.[com|de|org|net]$';
+    if (!$("#mail").val().match(filter)) {
+        borderColor(mail);
+        mail.focus();
+        gueltig = false;
+    }
+
+    if (!$("#nachname").val().match("([a-zA-ZäöüÄÖÜ])+")) {
+        borderColor(nachname);
+        nachname.focus();
+        gueltig = false;
+    }
+
+    if (!$("#vorname").val().match("([a-zA-ZäöüÄÖÜ])+")) {
+        borderColor(vorname);
+        vorname.focus();
+        gueltig = false;
+    }
+
+    if(gueltig == false ){
+        alert('Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben')
+    }
+
+    return gueltig;
 }
 
-function validName(name) {
-
-    var strReg = /^([a-zA-ZÖÄÜöäü]+)$/;
-    var regex = new RegExp(strReg);
-    return(regex.test(name));
-}
-
-function validMatrikelnummer(matrNr) {
-
-    var strReg = /^([0-9]{7})$/;
-    var regex = new RegExp(strReg);
-    return(regex.test(matrNr));
-}
-
-
-function validhandy(mobilNr) {
-
-    var strReg = /^0+([0-9]{10,11})$/;
-    var regex = new RegExp(strReg);
-    return(regex.test(mobilNr));
-}
-
-function checkForm(){
-
-    var fehlerAusgabe='';
-
-
-    if ($("input[name=handy]").val()==''){
-        fehlerAusgabe = "Feld Handynummer ist leer\n"+fehlerAusgabe
-        $("input[name=handy]").addClass("redBorder");
-        $("input[name=handy]").focus();
-
-    }
-    else if (!validhandy($("input[name=handy]").val())){
-        fehlerAusgabe = "Ihre Handynummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=handy]").addClass("redBorder");
-        $("input[name=handy]").focus();
-    }
-    else{
-        $("input[name=handy]").removeClass("redBorder");
-    }
-
-
-
-    if ($("input[name=matrikelnr]").val()==""){
-        fehlerAusgabe = "Feld Matrikelnummer ist leer\n"+fehlerAusgabe;
-        $("input[name=matrikelnr]").addClass("redBorder");
-        $("input[name=matrikelnr]").focus();
-    }
-    else if (!validMatrikelnummer($("input[name=matrikelnr]").val())){
-        fehlerAusgabe = "Ihr Matrikelnummer wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=matrikelnr]").addClass("redBorder");
-        $("input[name=matrikelnr]").focus();
-    }
-    else{
-        $("input[name=matrikelnr]").removeClass("redBorder");
-    }
-
-
-
-    if ($("input[name=email]").val()==""){
-        fehlerAusgabe = "Feld E-Mail ist leer\n"+fehlerAusgabe;
-        $("input[name=email]").addClass("redBorder");
-        $("input[name=email]").focus();
-    }
-    else if (!validEmail($("input[name=email]").val())){
-        fehlerAusgabe = "In der E-Mail-Adresse wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=email]").addClass("redBorder");
-        $("input[name=email]").focus();
-    }
-    else{
-        $("input[name=email]").removeClass("redBorder");
-    }
-
-
-
-
-    if ($("input[name=name]").val()==""){
-        fehlerAusgabe = "Feld Nachname ist leer\n"+fehlerAusgabe;
-        $("input[name=name]").addClass("redBorder");
-        $("input[name=name]").focus();
-    }
-    else if (!validName($("input[name=name]").val())){
-        fehlerAusgabe = "Ihr Nachname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=name]").addClass("redBorder");
-        $("input[name=name]").focus();
-    }
-    else{
-        $("input[name=name]").removeClass("redBorder");
-    }
-
-
-
-    if ($("input[name=vormane]").val()==""){
-        fehlerAusgabe = "Feld Vorname ist leer\n"+fehlerAusgabe;
-        $("input[name=vorname]").addClass("redBorder");
-        $("input[name=vorname]").focus();
-    }
-    else if (!validName($("input[name=vorname]").val())){
-        fehlerAusgabe = "Ihr Vorname wurde nicht korrekt eingetragen!\n"+fehlerAusgabe;
-        $("input[name=vorname]").addClass("redBorder");
-        $("input[name=vorname]").focus();
-    }
-    else{
-        $("input[name=vorname]").removeClass("redBorder");
-    }
-
-
-
-    if (fehlerAusgabe.length>0) {
-        alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben\n\nFestgestellte Probleme: \n\n"+fehlerAusgabe);
-        return(false);
-    }
+function borderColor(v){
+    v.style.borderColor = "red";
 }

@@ -1,20 +1,10 @@
-@import url(/../Meilenstein%202-3/css/main.css);
+@import url(main.css);
 
-body{
-
-}
-
-
-.redBorder{
-    border-color: red;
-}
-
-#titel_Logo{
+#titel_Box{
     margin-left: 10%;
 }
 
 #ueberschrift{
-    padding-top: 5%;
     margin-left: 4%;
 }
 
@@ -34,7 +24,7 @@ body{
     float: left;
     width: 35%;
     margin-left: 4%;
-    margin-top: 3%;
+    margin-top: 5%;
     font-size: 12px;
     margin-right: 2%;
 }
@@ -48,7 +38,7 @@ body{
     border: 0px;
 }
 
-#table tr, td{
+#table, tr, td{
     border: 0px;
     padding: 8px;
 }
@@ -76,4 +66,8 @@ body{
 #zurDetail{
     margin-top: 30%;
     font-size: 18px;
+}
+
+.red{
+    border-color: red;
 }

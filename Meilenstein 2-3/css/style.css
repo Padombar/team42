@@ -1,8 +1,9 @@
-@import url(/../Meilenstein%202-3/css/main.css);
+@import url(main.css);
 
 body {
     color: #5F5F5F;
-    font-weight: normal;
+    font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
+    font-weight: 400;
 }
 
 #titel_box{
@@ -15,16 +16,15 @@ body {
 
 h1{
     text-align: center;
-    font-size: 29px;
+    font-size: 22pt;
 }
 
 #content_text{
-    font-family: verdana,tahoma,arial,helvetica,verdana,sans-serif;
     width: 32%;
     margin-right: 2%;
     float: left;
     margin-left: 18%;
-    font-size: 20px;
+    font-size: 16pt;
 }
 
 #content_image1{
