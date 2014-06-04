@@ -16,25 +16,25 @@ function checkForm() {
     /*
     Abfragen der einzelenen Felder
      */
-    if (!$("#handynummer").val().match(handyRegEx)) {
+    if (!$("#handy").val().match(handyRegEx)) {
         borderColor(handynummer);
         handynummer.focus();
         gueltig = false;
     }
 
-    if (!$("#matrikelnummer").val().match(matrikelRegEx)) {
+    if (!$("#matrikelnr").val().match(matrikelRegEx)) {
         borderColor(matrikelnummer);
         matrikelnummer.focus();
         gueltig = false;
     }
 
-    if (!$("#mail").val().match(mailRegEx)) {
+    if (!$("#email").val().match(mailRegEx)) {
         borderColor(mail);
         mail.focus();
         gueltig = false;
     }
 
-    if (!$("#nachname").val().match(nachnameRegEx)) {
+    if (!$("#name").val().match(nachnameRegEx)) {
         borderColor(nachname);
         nachname.focus();
         gueltig = false;
