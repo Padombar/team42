@@ -1,11 +1,21 @@
 function checkForm() {
+    /*
+    Variable gueltig wird auf false gesetzt, wenn ein Ausdruck falsch ist
+     */
     var gueltig = true;
+
+    /*
+     * Reguläre Ausdrücke in Variablen gespeichert
+     */
     var handyRegEx = "0+([0-9])";
     var matrikelRegEx = "([0-9]){7}";
     var mailRegEx = "^[a-zA-Z0-9äöü._%+-]+@[a-zA-Z0-9äöüÄÖÜ.-]+.[com|de|org|net]$";
     var nachnameRegEx = "([a-zA-ZäöüÄÖÜ])+";
     var vornameRegEx = "([a-zA-ZäöüÄÖÜ])+";
 
+    /*
+    Abfragen der einzelenen Felder
+     */
     if (!$("#handynummer").val().match(handyRegEx)) {
         borderColor(handynummer);
         handynummer.focus();
@@ -36,6 +46,9 @@ function checkForm() {
         gueltig = false;
     }
 
+    /*
+    Ausgabe der Fehlermeldung, wenn gueltig auf false gesetzt wurde
+     */
     if(gueltig == false ){
         alert('Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben')
     }
@@ -43,6 +56,9 @@ function checkForm() {
     return gueltig;
 }
 
+/*
+Rahmenfarbe wird rot gefärbt bei falscher Eingabe
+ */
 function borderColor(v){
     $( v ).addClass("red");
 }
