@@ -17,24 +17,24 @@ function checkForm() {
     Abfragen der einzelenen Felder
      */
     if (!$("#handy").val().match(handyRegEx)) {
-        borderColor(handynummer);
-        handynummer.focus();
+        borderColor(handy);
+        handy.focus();
         gueltig = false;
     }
 
     if (!$("#matrikelnr").val().match(matrikelRegEx)) {
-        borderColor(matrikelnummer);
-        matrikelnummer.focus();
+        borderColor(matrikelnr);
+        matrikelnr.focus();
         gueltig = false;
     }
 
     if (!$("#email").val().match(mailRegEx)) {
-        borderColor(mail);
-        mail.focus();
+        borderColor(email);
+        email.focus();
         gueltig = false;
     }
 
-    if (!$("#name").val().match(nachnameRegEx)) {
+    if (!$("#nachname").val().match(nachnameRegEx)) {
         borderColor(nachname);
         nachname.focus();
         gueltig = false;
@@ -52,7 +52,6 @@ function checkForm() {
     if(gueltig == false ){
         alert('Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben')
     }
-
     return gueltig;
 }
 
