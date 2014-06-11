@@ -69,13 +69,13 @@ function loadPage(url){
 }
 
 /* JSON-Objekte */
-var webtechJSON = JSON.parse(loadPage("/../team42/Meilenstein 2-4/json/webtech.json"));
+var webtechJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/webtech.json"));
 
-var conhitJSON = JSON.parse(loadPage("/../team42/Meilenstein 2-4/json/conhit.json"));
+var conhitJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/conhit.json"));
 
-var cebitJSON = JSON.parse(loadPage("/../team42/Meilenstein 2-4/json/cebit.json"));
+var cebitJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/cebit.json"));
 
-var kostenJSON = JSON.parse(loadPage("/../team42/Meilenstein 2-4/json/kosten.json"));
+var kostenJSON = JSON.parse(loadPage("/../Meilenstein 2-3/json/kosten.json"));
 
 /* Tabellen erstellen und mit JSON-Objekten beschreiben */
 function kostenTabelle() {
