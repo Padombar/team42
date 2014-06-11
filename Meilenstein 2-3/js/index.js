@@ -1,8 +1,3 @@
-/**
- * Created by Sebastian on 28.05.14.
- */
-
-
 function validEmail(email) {
 
     var strReg = /^([^\s@,:"<>]+)@([^\s@,:"<>]+\.)([DE|de|COM|com|ORG|org|NET|net]+)$/;
